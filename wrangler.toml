@@ -1,0 +1,18 @@
+# wrangler.toml
+
+name = "url-shortner"
+main = "src/index.js"
+compatibility_date = "2023-10-30"
+
+# This binding allows the worker to access the KV namespace.
+# The `id` will be automatically created and filled in during the deploy process.
+[[kv_namespaces]]
+binding = "URL_STORE"
+id = "b420244b8b8d44feb3a95fb46b0f9d7e"
+preview_id = ""
+
+# This section defines secret variables.
+# The user will be prompted to enter these values during deployment.
+[vars]
+TELEGRAM_BOT_TOKEN = "7560515184:AAFWyDMONo78U4dulHpf4WuQtPheRVwUc_M"
+GITHUB_REPO_URL = "https://github.com/Johndevils/url-shortner-"
